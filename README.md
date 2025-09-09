@@ -78,10 +78,17 @@ Synapse Analytics (Star Schema) → Power BI Dashboards → Emergency Alerts
 
 #### 🏗️ Technical Architecture
 \`\`\`
-TikTok API → Apache Airflow → Azure Data Factory → ADLS Gen2 (Medallion) → 
+API → Azure Data Factory → ADLS Gen2 (Medallion) → 
 Azure Databricks (PySpark) → Synapse Analytics → Power BI Dashboards
 \`\`\`
 
+graph TD
+    A[API Source] --> B[Azure Data Factory]
+    B --> C[ADLS Gen2<br>(Medallion Architecture)]
+    C --> D[Azure Databricks<br>(PySpark Transformations)]
+    D --> E[Azure Synapse Analytics]
+    E --> F[Power BI Dashboards]
+    
 #### 🔧 Key Technical Achievements
 - **Orchestrated** complex ETL ecosystem using Apache Airflow with 35% processing speed improvement
 - **Established** medallion architecture (Bronze-Silver-Gold) reducing storage costs by 30%
@@ -95,23 +102,45 @@ Azure Databricks (PySpark) → Synapse Analytics → Power BI Dashboards
 
 ### ☁️ Cloud Platforms & Services
 \`\`\`
-Azure Data Factory    ████████████████████ 95%
-Azure Synapse         ████████████████████ 95%
+Azure Data Factory    ████████████████████ 95% 
+Azure Synapse         ████████████████████ 95% 
 Azure SQL Database    ████████████████████ 90%
 Azure Databricks      ████████████████████ 90%
 Azure Data Lake       ████████████████████ 85%
 Power BI              ████████████████████ 90%
 \`\`\`
 
+## ☁️ Cloud Platforms & Services
+
+| Service              | Proficiency Bar                         | Proficiency |
+|----------------------|------------------------------------------|-------------|
+| Azure Data Factory   | ████████████████████                    | 95%         |
+| Azure Synapse        | ████████████████████                    | 95%         |
+| Azure SQL Database   | ████████████████████                    | 90%         |
+| Azure Databricks     | ████████████████████                    | 90%         |
+| Azure Data Lake      | ██████████████████                      | 85%         |
+| Power BI             | ████████████████████                    | 90%         |
 ### 💻 Programming & Tools
 \`\`\`
 Python/PySpark        ████████████████████ 95%
-SQL (T-SQL)           ████████████████████ 95%
+SQL                   ████████████████████ 95%
 Apache Airflow        ████████████████████ 85%
 Azure DevOps          ████████████████████ 80%
 Git/GitHub            ████████████████████ 90%
 Docker                ████████████████████ 75%
 \`\`\`
+
+### 💻 Programming & Tools
+
+| Tool/Language        | Proficiency Bar                         | Proficiency |
+|----------------------|------------------------------------------|-------------|
+| Python / PySpark     | ████████████████████                    | 95%         |
+| SQL                  | ████████████████████                    | 95%         |
+| Apache Airflow       | ████████████████████                    | 85%         |
+| Azure DevOps         | ███████████████████                     | 80%         |
+| Git / GitHub         | ████████████████████                    | 90%         |
+| Docker               | ██████████████████                      | 75%         |
+| Apache Kafka         | █████████████████                       | 80%         |
 
 ### 📊 Data Engineering Specializations
 - **ETL/ELT Pipeline Design**: Real-time and batch processing architectures
@@ -138,20 +167,7 @@ Docker                ███████████████████�
 
 ---
 
-## 🏗️ Architecture Patterns & Best Practices
-
-### 🔄 Data Pipeline Architecture
-\`\`\`mermaid
-graph LR
-    A[Data Sources] --> B[Azure Data Factory]
-    B --> C[Data Lake Storage]
-    C --> D[Azure Databricks]
-    D --> E[Azure Synapse]
-    E --> F[Power BI]
-    E --> G[ML Models]
-    F --> H[Business Users]
-    G --> I[Automated Alerts]
-\`\`\`
+## 🏗️ Best Practices
 
 ### 📊 Star Schema Implementation
 - **Fact Tables**: Optimized for analytical queries with columnstore indexing
@@ -174,9 +190,9 @@ graph LR
 
 I'm passionate about transforming complex data challenges into scalable, reliable solutions that drive business value. Whether you're looking to modernize your data infrastructure, implement real-time analytics, or optimize existing pipelines, I'd love to discuss how my expertise can contribute to your team's success.
 
-**📧 Email**: [your.email@example.com](mailto:your.email@example.com)  
-**💼 LinkedIn**: [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)  
-**🌐 Portfolio**: [github.com/yourusername](https://github.com/yourusername)
+**📧 Email**: [shaikallabakash307@gmail.com](mailto:your.email@example.com)  
+**💼 LinkedIn**: [linkedin.com/in/shaik-allabakash-083824217](https://www.linkedin.com/in/shaik-allabakash-083824217)  
+**🌐 Portfolio**: [github.com/shaikallabakash-339](https://github.com/shaikallabakash-339)
 
 ---
 
