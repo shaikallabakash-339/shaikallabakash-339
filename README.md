@@ -45,10 +45,12 @@
 | **Query Performance** | 🚀 **90% Speed Improvement** | Real-time research capabilities |
 
 #### 🏗️ Technical Architecture
-\`\`\`
-Seismic Data Sources → Azure Data Factory → Azure SQL Database → 
-Synapse Analytics (Star Schema) → Power BI Dashboards → Emergency Alerts
-\`\`\`
+
+graph TD
+    A[Data Sources] --> B[Azure Data Factory]
+    B --> C[Azure SQL Database]
+    C --> E[Power BI Dashboards]
+    E --> F[Emergency Alerts]
 
 #### 🔧 Key Technical Achievements
 - **Engineered** real-time ETL pipelines processing 500,000+ seismic events daily with 99.9% reliability
@@ -77,18 +79,14 @@ Synapse Analytics (Star Schema) → Power BI Dashboards → Emergency Alerts
 | **Cost Optimization** | 💰 **30% Storage Savings** | Efficient resource utilization |
 
 #### 🏗️ Technical Architecture
-\`\`\`
-API → Azure Data Factory → ADLS Gen2 (Medallion) → 
-Azure Databricks (PySpark) → Synapse Analytics → Power BI Dashboards
-\`\`\`
 
 graph TD
-    A[API Source] --> B[Azure Data Factory]
+    A[Rapid API Source] --> B[Azure Data Factory]
     B --> C[ADLS Gen2<br>(Medallion Architecture)]
     C --> D[Azure Databricks<br>(PySpark Transformations)]
     D --> E[Azure Synapse Analytics]
     E --> F[Power BI Dashboards]
-    
+
 #### 🔧 Key Technical Achievements
 - **Orchestrated** complex ETL ecosystem using Apache Airflow with 35% processing speed improvement
 - **Established** medallion architecture (Bronze-Silver-Gold) reducing storage costs by 30%
@@ -100,15 +98,7 @@ graph TD
 
 ## 🛠️ Technical Expertise
 
-### ☁️ Cloud Platforms & Services
-\`\`\`
-Azure Data Factory    ████████████████████ 95% 
-Azure Synapse         ████████████████████ 95% 
-Azure SQL Database    ████████████████████ 90%
-Azure Databricks      ████████████████████ 90%
-Azure Data Lake       ████████████████████ 85%
-Power BI              ████████████████████ 90%
-\`\`\`
+
 
 ## ☁️ Cloud Platforms & Services
 
@@ -120,15 +110,7 @@ Power BI              ███████████████████�
 | Azure Databricks     | ████████████████████                    | 90%         |
 | Azure Data Lake      | ██████████████████                      | 85%         |
 | Power BI             | ████████████████████                    | 90%         |
-### 💻 Programming & Tools
-\`\`\`
-Python/PySpark        ████████████████████ 95%
-SQL                   ████████████████████ 95%
-Apache Airflow        ████████████████████ 85%
-Azure DevOps          ████████████████████ 80%
-Git/GitHub            ████████████████████ 90%
-Docker                ████████████████████ 75%
-\`\`\`
+
 
 ### 💻 Programming & Tools
 
